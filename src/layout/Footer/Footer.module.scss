@@ -1,0 +1,32 @@
+@import '../../veriables.scss';
+
+
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  background-color: $blue;
+  width: 100%;
+  padding: 70px 0 40px 0;
+  color: $white;
+
+  box-shadow: inset 0px 11px 8px -15px $black;
+}
+
+.logoBack {
+  margin-left: -15px;
+  padding-top: 22px;
+  width: 100px;
+  border-radius: 25px;
+  background: $light-black;
+  margin-bottom: 15px;
+}
+
+.removeBorder {
+  position: relative;
+  left: 0;
+  top: -98px;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  border: 1px solid $light-black;
+}

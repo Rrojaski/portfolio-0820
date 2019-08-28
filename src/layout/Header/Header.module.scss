@@ -1,0 +1,86 @@
+@import '../../veriables.scss';
+
+
+.header {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  padding: 30px 5px;
+  background-color: inherit;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+        -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                   box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+    z-index: 100;
+}
+
+
+}
+
+.removeBorder {
+  position: relative;
+  left: -70px;
+  top: -10px;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  border: 1px solid $other-white;
+}
+
+//turn into transition so the slide animation may sldie up upon unfocus
+@media screen and (max-width: 1023px) {
+
+
+  .open:focus-within .mobileOpen{
+      display: block !important;
+      animation: slideDown 1s !important;
+
+  }
+
+  .mobileOpen {
+    box-sizing: border-box;
+    padding-top: 20px;
+    overflow: hidden;
+    display: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid $border-color;
+    background: $other-white;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: 4;
+
+    
+  }
+
+
+  .mobileClose {
+    display: none !important;
+  }
+} 
+
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 150px;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../veriables.scss';
+
+.button {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid $blue; 
+  border-radius: 30px;
+  transition: .2s ease;
+  &:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: $blue;
+  }
+}
+
+.white {
+  padding: 10px 20px;
+  color: $blue;
+  &:hover{
+    color: $white;
+
+  }
+}
+
+.black {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  color: $white;
+}
