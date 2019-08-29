@@ -5,10 +5,10 @@ import styles from "./Menu.module.scss";
 const Menu = props => {
   return (
     <Fragment>
-      <div className={`${styles.menu}`} readonly="true" contenteditable="true">
-        <div />
-        <div />
-        <div />
+      <div className={`${styles.menu}`} tabindex="0">
+        <div readonly="true" contenteditable="false" />
+        <div readonly="true" contenteditable="false" />
+        <div readonly="true" contenteditable="false" />
       </div>
       <div className={`${styles.child}`}>{props.children}</div>
     </Fragment>

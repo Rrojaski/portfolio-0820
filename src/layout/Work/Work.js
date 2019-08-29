@@ -89,7 +89,7 @@ class Work extends Component {
                 <br />
                 <br />
                 <br />
-                <Button path="https://www.anime-shop-online.com/" type="white">
+                <Button path="https://www.anime-shop-online.com/" type="work">
                   Visit Site
                 </Button>
               </Col>

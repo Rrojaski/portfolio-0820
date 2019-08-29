@@ -19,9 +19,9 @@
 
 <h2>To do</h2>
 <ul>
+<li>Update work section graphics</li>
 <li>Fix DNS settings</li>
 <li>Add CV</li>
-<li>Update svg files</li>
 <li>Fix Scroll Magic</li>
 <li>Update projects when they are complete</li>
 </ul>

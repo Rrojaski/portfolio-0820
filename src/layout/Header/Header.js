@@ -8,10 +8,11 @@ import Logo from "../../components/Logo/Logo";
 import Button from "../../components/Button/Button";
 import Title from "../../components/Title/Title";
 import Menu from "../../components/Menu/Menu";
+import Paragraph from "../../components/Paragraph/Paragraph";
 
 //images
 import avatar from "../../images/avatar.svg";
-import Paragraph from "../../components/Paragraph/Paragraph";
+import close from "../../images/close.svg";
 
 class Header extends Component {
   render() {
@@ -101,8 +102,12 @@ class Header extends Component {
                             <Col xs={1}>
                               <Link to="/">
                                 <img
-                                  style={{ width: "25px" }}
-                                  src="https://image.flaticon.com/icons/svg/151/151882.svg"
+                                  style={{
+                                    position: "relative",
+                                    left: "-35px",
+                                    width: "25px"
+                                  }}
+                                  src={close}
                                 />
                               </Link>
                             </Col>

@@ -66,7 +66,7 @@ class Home extends Component {
 
                     <Col xs={12}>
                       <Row center="xs">
-                        <Avatar alt='Avatar of author. Has red hair and pale skin with freckles.' />
+                        <Avatar alt="Avatar of author. Has red hair and pale skin with freckles." />
                         <div className={`${styles.removeBorder}`} />
                       </Row>
                     </Col>

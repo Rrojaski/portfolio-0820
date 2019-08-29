@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import "reset.css";
 import "./styles.scss";
@@ -15,7 +15,7 @@ import Footer from "./layout/Footer/Footer";
 function App() {
   return (
     <Fragment>
-      <Router>
+      <HashRouter>
         <div id='style-1' className="App">
           <Header />
           <Switch>
@@ -25,7 +25,7 @@ function App() {
           </Switch>
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
     </Fragment>
   );
 }
