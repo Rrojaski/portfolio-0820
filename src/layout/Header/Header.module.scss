@@ -1,5 +1,4 @@
-@import '../../veriables.scss';
-
+@import "../../veriables.scss";
 
 .header {
   box-sizing: border-box;
@@ -21,16 +20,15 @@
     width: 100%;
     height: 10px;
 
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-        -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-                   box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 
     z-index: 100;
+  }
 }
 
-
-}
-
+//useless code; updated img files to divs so wierd border is gone
 .removeBorder {
   position: relative;
   left: -70px;
@@ -38,17 +36,14 @@
   width: 70px;
   height: 70px;
   box-sizing: border-box;
-  border: 1px solid $other-white;
+  // border: 1px solid $light-black;
 }
 
 //turn into transition so the slide animation may sldie up upon unfocus
 @media screen and (max-width: 1023px) {
-
-
-  .open:focus-within .mobileOpen{
-      display: block !important;
-      animation: slideDown 1s !important;
-
+  .open:focus-within .mobileOpen {
+    display: block !important;
+    animation: slideDown 0.5s !important;
   }
 
   .mobileOpen {
@@ -62,25 +57,21 @@
     left: 0;
     top: 120px;
     width: 100%;
-    height: 150px;
+    height: 120px;
     position: absolute;
     z-index: 4;
-
-    
   }
-
 
   .mobileClose {
     display: none !important;
   }
-} 
-
+}
 
 @keyframes slideDown {
   from {
     height: 0;
   }
   to {
-    height: 150px;
+    height: 120px;
   }
 }

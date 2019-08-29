@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Logo = styled.img`
+const Logo = styled.div`
   box-sizing: border-box;
 
   padding: -10px;

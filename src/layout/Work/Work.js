@@ -18,7 +18,22 @@ import Pane from "../../components/Pane/Pane";
 import animeCover from "../../images/animeCover.png";
 
 class Work extends Component {
+  constructor() {
+    super();
+  }
+
   componentDidMount() {
+    const contruct = e => {
+      let target = e.target.id;
+      alert(
+        `The ${target} app is currently under development. Thank you for your patients.`
+      );
+    };
+    const nails = document.getElementById("nails");
+    const weather = document.getElementById("weather");
+    nails.addEventListener("click", contruct);
+    weather.addEventListener("click", contruct);
+
     //fix animation trigger
 
     let controller = new ScrollMagic.Controller();
@@ -46,9 +61,7 @@ class Work extends Component {
           <Grid>
             <Row center="xs">
               <Col>
-                <Title size="work">
-                  Work That Spans Worlds
-                </Title>
+                <Title size="work">Work That Spans The Globe</Title>
                 <Globe />
               </Col>
             </Row>
@@ -144,7 +157,7 @@ class Work extends Component {
                     <Pane
                       color="light"
                       type="nails"
-                      desc="A visually appealing website showcases the work of a nails expert."
+                      desc="This visually appealing website showcases the work of a nails expert."
                     />
                   </Col>
 

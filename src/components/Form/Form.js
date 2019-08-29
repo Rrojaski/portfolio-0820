@@ -2,21 +2,27 @@ import React, { Fragment } from "react";
 
 import styles from "./Form.module.scss";
 
+
+
 const Form = props => {
   return (
     <Fragment>
-      <form className={`${styles.form}`}>
+      <form
+        method="POST"
+        action="https://formspree.io/rrojaski@gmail.com"
+        className={`${styles.form}`}
+      >
         <div className={`${styles.name}`}>
           <label>Name</label>
-          <input type="test" required />
+          <input type="test" name="name" required />
         </div>
         <div className={`${styles.email}`}>
           <label>Email</label>
-          <input type="email" required />
+          <input type="email" name="_replyto" required />
         </div>
         <div className={`${styles.message}`}>
           <label>Message</label>
-          <textarea required />
+          <textarea name="message" required />
         </div>
         <button>Submit</button>
       </form>

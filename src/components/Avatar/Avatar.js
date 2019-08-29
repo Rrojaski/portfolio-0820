@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 
-const Avatar = styled.img`
+const Avatar = styled.div`
   margin-top: 20px;
   margin-right: -215px;
   width: 215px;

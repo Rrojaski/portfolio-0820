@@ -27,18 +27,29 @@ import claudio from "../../images/claudio.jfif";
 import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-
-
-
 class Home extends Component {
+  constructor() {
+    super();
+  }
+
+  componentDidMount() {
+    const contruct = e => {
+      let target = e.target.id;
+      alert(
+        `The ${target} app is currently under development. Thank you for your patients.`
+      );
+    };
+    const nails = document.getElementById("nails");
+    const weather = document.getElementById("weather");
+    nails.addEventListener("click", contruct);
+    weather.addEventListener("click", contruct);
+  }
+
   render() {
     return (
       <Fragment>
         <div className={`${styles.home}`}>
-          <Section
-            pad="210px 0 380px 0"
-            className={`${styles.city}`}
-          >
+          <Section pad="210px 0 380px 0" className={`${styles.city}`}>
             <Grid>
               <Row center="xs">
                 <Col md={12} xs={11}>
@@ -55,7 +66,7 @@ class Home extends Component {
 
                     <Col xs={12}>
                       <Row center="xs">
-                        <Avatar />
+                        <Avatar alt='Avatar of author. Has red hair and pale skin with freckles.' />
                         <div className={`${styles.removeBorder}`} />
                       </Row>
                     </Col>
@@ -95,7 +106,7 @@ class Home extends Component {
           <Section>
             <Grid>
               <Row center="xs">
-                <Col md={12} xs={11}>
+                <Col lg={12} md={10} xs={11}>
                   <Row center="xs">
                     <Col lg={4} xs={12}>
                       <Overlay section="white" position="first">
@@ -228,14 +239,14 @@ class Home extends Component {
           <Section borderBottom="1px solid #E6ECF8" pad="50px 0 100px 0">
             <Grid>
               <Row center="xs">
-                <Col md={12} xs={11}>
+                <Col lg={12} md={10} xs={11}>
                   <Row>
                     <Col xs={12}>
                       <Title size="md">My Recent Work</Title>
 
                       <Paragraph>
                         Here are a few recent design projects. Want to see more?
-                        <a href="mailto:rrojaski.com"> Email me</a>.
+                        <a href="mailto:rrojaski@gmail.com"> Email me</a>.
                       </Paragraph>
                     </Col>
 
@@ -252,7 +263,7 @@ class Home extends Component {
                       <Pane
                         color="dark"
                         type="nails"
-                        desc="A visually appealing website showcases the work of a nails expert."
+                        desc="This visually appealing website showcases the work of a nails expert."
                       />
                     </Col>
 

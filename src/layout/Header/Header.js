@@ -121,7 +121,7 @@ class Header extends Component {
                               <Menu>
                                 <div className={`${styles.mobileOpen}`}>
                                   <Row center="xs">
-                                    <Col xs={3}>
+                                    <Col xs={4}>
                                       <Link to="/contact">
                                         <Button type="white">Say Hello</Button>
                                       </Link>

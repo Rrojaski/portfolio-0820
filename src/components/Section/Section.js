@@ -16,7 +16,7 @@ const Section = styled.div`
     background-size: 300% !important;
   }
   @media screen and (max-width: 480px) {
-    background-size: 600% 300% !important;
+    background-size: 500%  !important;
   }
 `;
 

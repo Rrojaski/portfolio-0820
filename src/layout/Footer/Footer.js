@@ -50,54 +50,95 @@ class Footer extends Component {
                   }}
                 />
               </Col>
-              <Col xs={11}>
-                <Row center="xs">
-                  <Col xs={12}>
-                    <Row middle='xs' center="xs">
-                      <Col xs={1}>
-                        <div className={`${styles.logoBack}`}>
-                          <Logo />
-                        </div>
-                        <div className={`${styles.removeBorder}`} />
-                      </Col>
-                    </Row>
-                    <Row center="xs">
-                      <Col lg={4} md={5} xs={11}>
-                        <Paragraph size="lg">
-                          Living, learning, & leveling up one day at a time.
-                        </Paragraph>
-                        <br />
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col xs={12}>
-                    <Icon
-                      name="linkedin"
-                      type="shake"
-                      href="https://www.linkedin.com/in/roman-rojas-14a23a86"
-                    />
-                    <Icon
-                      name="dribble"
-                      type="jump"
-                      href="https://dribbble.com/romanrojas"
-                    />
-                    <Icon
-                      name="github"
-                      type="spin"
-                      href="https://github.com/Rrojaski"
-                    />
-                  </Col>
-                  <Col xs={12}>
-                    <Paragraph>
-                      Made with love{" "}
+
+              <Col lgOffset={1} xs={12}>
+                <Row middle="xs" center="xs">
+                  <Col lg={4} xs={12}>
+                    <Row center='xs' middle="xs">
+                      <Title size="sm">Email:</Title>
                       <a
-                        target="_blank"
-                        href="https://www.youtube.com/watch?v=ZZ5LpwO-An4"
+                        style={{
+                          position: "relative",
+                          marginLeft: "10px",
+                          top: "-12px",
+                          color: "#fff",
+                          textDecoration: "none",
+                          display: "inline-block"
+                        }}
+                        href="mailto:rrojaski@gmail.com"
                       >
-                        <Image sizeX="1rem" src={heart} />
-                      </a>{" "}
-                      by Roman Rojas
-                    </Paragraph>
+                        <Paragraph>rrojaski@gmail.com</Paragraph>
+                      </a>
+                    </Row>
+                    <Row center='xs' middle="xs">
+                      <Title size="sm">Phone:</Title>
+                      <a
+                        style={{
+                          position: "relative",
+                          marginLeft: "10px",
+                          top: "-10px",
+                          color: "#fff",
+                          textDecoration: "none",
+                          display: "inline-block"
+                        }}
+                        href="tel:9042715715"
+                      >
+                        <Paragraph>904 - 271 - 5715</Paragraph>
+                      </a>
+                    </Row>
+                  </Col>
+                  <Col lg={8} xs={12}>
+                    <Row center="xs">
+                      <Col xs={12}>
+                        <Row middle="xs" center="xs">
+                          <Col xs={1}>
+                            <div style={{ position: "relative" }}>
+                              <div className={`${styles.logoBack}`}>
+                                <Logo />
+                              </div>
+                              <div className={`${styles.removeBorder}`} />
+                            </div>
+                          </Col>
+                        </Row>
+                        <Row center="xs">
+                          <Col lg={6} xs={11}>
+                            <Paragraph size="lg">
+                              Living, learning, & leveling up one day at a time.
+                            </Paragraph>
+                            <br />
+                          </Col>
+                        </Row>
+                      </Col>
+                      <Col xs={12}>
+                        <Icon
+                          name="linkedin"
+                          type="shake"
+                          href="https://www.linkedin.com/in/roman-rojas-14a23a86"
+                        />
+                        <Icon
+                          name="dribble"
+                          type="jump"
+                          href="https://dribbble.com/romanrojas"
+                        />
+                        <Icon
+                          name="github"
+                          type="spin"
+                          href="https://github.com/Rrojaski"
+                        />
+                      </Col>
+                      <Col xs={12}>
+                        <Paragraph>
+                          Made with love{" "}
+                          <a
+                            target="_blank"
+                            href="https://www.youtube.com/watch?v=ZZ5LpwO-An4"
+                          >
+                            <Image sizeX="1rem" src={heart} />
+                          </a>{" "}
+                          by Roman Rojas
+                        </Paragraph>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
               </Col>

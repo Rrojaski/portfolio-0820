@@ -5,7 +5,7 @@ import styles from "./Menu.module.scss";
 const Menu = props => {
   return (
     <Fragment>
-      <div className={`${styles.menu}`} contenteditable="true">
+      <div className={`${styles.menu}`} readonly="true" contenteditable="true">
         <div />
         <div />
         <div />

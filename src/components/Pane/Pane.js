@@ -2,6 +2,14 @@ import React, { Fragment } from "react";
 
 import styles from "./Pane.module.scss";
 
+const click = () => {
+  alert(`In the works`);
+};
+
+const noClick = () => {
+  console.log("Redirecting user");
+};
+
 const Pane = props => {
   return (
     <Fragment>
@@ -14,7 +22,7 @@ const Pane = props => {
         >
           <p>{props.desc}</p>
           <a target="_blank" href={props.href}>
-            <button>Visit Website -></button>
+            <button id={props.type}> Visit Website -></button>
           </a>
         </div>
       </div>
