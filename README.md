@@ -23,7 +23,6 @@
 <li>Fix DNS settings</li>
 <li>Add CV</li>
 <li>Fix Scroll Magic</li>
-<li>Update projects when they are complete</li>
 </ul>
 
 <h2>Troubleshooting</h2>

@@ -23,6 +23,10 @@ class Work extends Component {
   }
 
   componentDidMount() {
+    /*
+
+    No longer needed. Used to alert user that pane component projects were under the works
+
     const contruct = e => {
       let target = e.target.id;
       alert(
@@ -34,6 +38,7 @@ class Work extends Component {
     nails.addEventListener("click", contruct);
     weather.addEventListener("click", contruct);
 
+    */
     //fix animation trigger
 
     let controller = new ScrollMagic.Controller();
@@ -56,13 +61,19 @@ class Work extends Component {
         <Section
           pos="bottom"
           //backImage="url(http://pluspng.com/img-png/wave-background-png-blue-moving-flowing-abstract-waves-on-white-background-blurred-smooth-seamless-loop-design-video-animation-1920x1080-motion-background-videoblocks-1920.png)"
-          pad="160px 0"
+          pad="220px 0"
         >
           <Grid>
             <Row center="xs">
               <Col>
-                <Title size="work">Work That Spans The Globe</Title>
+                <Title size="work">“Out of clutter, find simplicity.”</Title>
+                <Paragraph size="lg">― Albert Einstein</Paragraph>
+                {/*
+
+                  Removed globe becasue of design and cross-platform compatability
+
                 <Globe />
+                */}
               </Col>
             </Row>
           </Grid>
@@ -155,17 +166,21 @@ class Work extends Component {
                 <Row center="xs">
                   <Col lg={4} xs={12}>
                     <Pane
+                      target="_blank"
+                      href="https://stupefied-kepler-3384a4.netlify.com"
                       color="light"
-                      type="nails"
-                      desc="This visually appealing website showcases the work of a nails expert."
+                      type="css"
+                      desc="This visually appealing website showcases advanced css designs"
                     />
                   </Col>
 
                   <Col lg={4} xs={12}>
                     <Pane
+                      target="_self"
+                      href="https://welcome-0906.netlify.com"
                       color="light"
-                      type="weather"
-                      desc="An interactive MERN app that allows you to log in and check the weather with some goofy features."
+                      type="welcome"
+                      desc="An ineractive welcome screen"
                     />
                   </Col>
                 </Row>

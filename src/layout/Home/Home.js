@@ -33,6 +33,10 @@ class Home extends Component {
   }
 
   componentDidMount() {
+    /*
+
+    No longer needed. Used to alert user that pane component projects were under the works
+
     const contruct = e => {
       let target = e.target.id;
       alert(
@@ -43,6 +47,7 @@ class Home extends Component {
     const weather = document.getElementById("weather");
     nails.addEventListener("click", contruct);
     weather.addEventListener("click", contruct);
+    */
   }
 
   render() {
@@ -252,26 +257,31 @@ class Home extends Component {
 
                     <Col lg={4} xs={12}>
                       <Pane
+                        target="_blank"
                         color="dark"
                         href="https://www.anime-shop-online.com"
                         type="anime"
-                        desc="An e-comerse anime website shipping to over 180 Countries."
+                        desc="An e-comerse anime website shipping to over 180 Countries"
                       />
                     </Col>
 
                     <Col lg={4} xs={12}>
                       <Pane
+                        target="_blank"
                         color="dark"
-                        type="nails"
-                        desc="This visually appealing website showcases the work of a nails expert."
+                        href="https://stupefied-kepler-3384a4.netlify.com"
+                        type="css"
+                        desc="This visually appealing website showcases advanced css designs"
                       />
                     </Col>
 
                     <Col lg={4} xs={12}>
                       <Pane
+                        target="_self"
+                        href="https://welcome-0906.netlify.com"
                         color="dark"
-                        type="weather"
-                        desc="An interactive MERN app that allows you to log in and check the weather with some goofy features."
+                        type="welcome"
+                        desc="An ineractive welcome screen"
                       />
                     </Col>
                   </Row>

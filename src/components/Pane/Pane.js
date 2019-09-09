@@ -21,7 +21,10 @@ const Pane = props => {
           }`}
         >
           <p>{props.desc}</p>
-          <a target="_blank" href={props.href}>
+          <a
+            target={props.target}
+            href={props.href}
+          >
             <button id={props.type}> Visit Website -></button>
           </a>
         </div>
