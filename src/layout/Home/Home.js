@@ -200,7 +200,7 @@ class Home extends Component {
                         <Title size="sm">Full-Stack Developer</Title>
 
                         <Paragraph size="md" extra="mar">
-                          I have the crusial skills needed to launch a full
+                          I have the crucial skills needed to launch a full
                           scale interactive web appliccation.
                         </Paragraph>
 
