@@ -45,16 +45,16 @@ class Header extends Component {
                               <Menu>
                                 <div className={`${styles.mobileOpen}`}>
                                   <Row center="xs">
-                                    <Col xs={8}>
+                                    <Col xs={10}>
                                       <Row middle="xs" center="xs">
-                                        <Col xs={6} xs={5}>
+                                        <Col xs={12}>
                                           <Link to="/work">
                                             <Paragraph className="display">
                                               Work
                                             </Paragraph>
                                           </Link>
                                         </Col>
-                                        <Col xs={6} xs={7}>
+                                        <Col xs={6}>
                                           <Link to="/contact">
                                             <Button
                                               className="display"
@@ -63,6 +63,16 @@ class Header extends Component {
                                               Say Hello
                                             </Button>
                                           </Link>
+                                        </Col>
+                                        <Col xs={6}>
+                                          <a href="#" download="Rojas_Roman_CV">
+                                            <Button
+                                              className="display"
+                                              type="red"
+                                            >
+                                              My CV
+                                            </Button>
+                                          </a>
                                         </Col>
                                       </Row>
                                     </Col>
@@ -88,6 +98,15 @@ class Header extends Component {
                                   </Button>
                                 </div>
                               </Link>
+                            </Col>
+                            <Col lg={3} xs={1}>
+                              <div className={`${styles.mobileClose}`}>
+                                <a href="#" download="Rojas_Roman_CV">
+                                  <Button className="display" type="red">
+                                    My CV
+                                  </Button>
+                                </a>
+                              </div>
                             </Col>
                           </Row>
                         );
@@ -126,10 +145,17 @@ class Header extends Component {
                               <Menu>
                                 <div className={`${styles.mobileOpen}`}>
                                   <Row center="xs">
-                                    <Col xs={4}>
+                                    <Col xs={6}>
                                       <Link to="/contact">
                                         <Button type="white">Say Hello</Button>
                                       </Link>
+                                    </Col>
+                                    <Col xs={6}>
+                                      <a href="#" download="Rojas_Roman_CV">
+                                        <Button className="display" type="red">
+                                          My CV
+                                        </Button>
+                                      </a>
                                     </Col>
                                   </Row>
                                 </div>
@@ -142,6 +168,15 @@ class Header extends Component {
                                   <Button type="white">Say Hello</Button>
                                 </div>
                               </Link>
+                            </Col>
+                            <Col lg={3} xs={1}>
+                              <div className={`${styles.mobileClose}`}>
+                                <a href="#" download="Rojas_Roman_CV">
+                                  <Button className="display" type="red">
+                                    My CV
+                                  </Button>
+                                </a>
+                              </div>
                             </Col>
                           </Row>
                         );

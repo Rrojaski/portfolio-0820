@@ -1,23 +1,17 @@
 import React, { Fragment, Component } from "react";
-
 import { Grid, Row, Col } from "react-flexbox-grid";
+import StorageIcon from "@material-ui/icons/Storage";
+import VerticalSplitIcon from "@material-ui/icons/VerticalSplit";
 
 import styles from "./Home.module.scss";
 
 //components
-
 import Pane from "../../components/Pane/Pane";
-
 import Section from "../../components/Section/Section";
-
 import Avatar from "../../components/Avatar/Avatar";
-
 import Title from "../../components/Title/Title";
-
 import Paragraph from "../../components/Paragraph/Paragraph";
-
 import Overlay from "../../components/overlay/Overlay";
-
 import Image from "../../components/Image/Image";
 
 //media
@@ -26,6 +20,17 @@ import claudio from "../../images/claudio.jfif";
 
 import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import { display } from "@material-ui/system";
+
+// Font Icon
+const svgIcon = {
+  color: "#1a73e8",
+  fontSize: "5rem",
+  margin: "0 auto",
+  marginBottom: "1rem",
+  display: "block",
+  position: "relative"
+};
 
 class Home extends Component {
   constructor() {
@@ -113,8 +118,9 @@ class Home extends Component {
               <Row center="xs">
                 <Col lg={12} md={10} xs={11}>
                   <Row center="xs">
-                    <Col lg={4} xs={12}>
+                    <Col lg={6} xs={12}>
                       <Overlay section="white" position="first">
+                        <VerticalSplitIcon style={svgIcon} />
                         <Title size="sm">Front-end Developer</Title>
 
                         <Paragraph size="md" extra="mar">
@@ -153,7 +159,8 @@ class Home extends Component {
                         </Paragraph>
                       </Overlay>
                     </Col>
-
+                    {/*
+                    @info   Removed to promote author as software engineer exclusively
                     <Col lg={4} xs={12}>
                       <Overlay section="white" position="second">
                         <Title size="sm">IT Support</Title>
@@ -194,13 +201,16 @@ class Home extends Component {
                         </Paragraph>
                       </Overlay>
                     </Col>
+                  */}
 
-                    <Col lg={4} xs={12}>
+                    <Col lg={6} xs={12}>
                       <Overlay section="white" position="third">
+                        <StorageIcon style={svgIcon} />
+
                         <Title size="sm">Full-Stack Developer</Title>
 
                         <Paragraph size="md" extra="mar">
-                          I have the elemntal skills needed to launch a full
+                          I have the elemental skills needed to launch a full
                           scale interactive web appliccation.
                         </Paragraph>
 

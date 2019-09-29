@@ -2,7 +2,7 @@ import React, { Fragment, Component } from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { TimelineMax, TweenLite } from "gsap";
 import ScrollMagic from "scrollmagic";
-import "./Work.module.scss";
+import styles from "./Work.module.scss";
 
 //components
 import Section from "../../components/Section/Section";
@@ -16,6 +16,9 @@ import Pane from "../../components/Pane/Pane";
 
 //media
 import animeCover from "../../images/animeCover.png";
+import animeChart from "../../images/anichart.PNG";
+import anilistmp4 from "../../images/anilist.mp4";
+import anilistwebm from "../../images/anilist.webm";
 
 class Work extends Component {
   constructor() {
@@ -88,7 +91,12 @@ class Work extends Component {
             <Row center="xs">
               <Col lg={12} xs={11}>
                 <Title size="lg">Anime Shop Online</Title>
-                <Image sizeX="80%" mar="10px 0 40px 0" src={animeCover} />
+                <Image
+                  sizeX="80%"
+                  mar="10px auto 40px auto"
+                  display="block"
+                  src={animeCover}
+                />
                 <Paragraph>
                   Anime Fans Love Us! We offer best service and great prices on
                   Anime Products such as Clothes, Shoes and Accessories.
@@ -107,6 +115,9 @@ class Work extends Component {
             </Row>
           </Grid>
         </Section>
+        {/*
+        @info   Removed to promote author as software engineer exclusively
+
         <Section id="certs" backColor="#e42518" color="white" pad="100px 0">
           <Grid>
             <Row center="xs">
@@ -149,6 +160,77 @@ class Work extends Component {
                   in a wide variety of IT roles with a track record in system
                   implementation, project management, and network design.
                 </Paragraph>
+              </Col>
+            </Row>
+          </Grid>
+        </Section>
+        */}
+        <Section
+          className="border"
+          backColor="#ea4335"
+          color="white"
+          pad="80px 0"
+        >
+          <Grid>
+            <Row center="xs">
+              <Col lg={12} xs={11}>
+                <Title size="lg">AniList</Title>
+                <video
+                  className={styles.work__video}
+                  loop="loop"
+                  autoplay="autoplay"
+                  muted="muted"
+                >
+                  <source src={anilistwebm} type="video/webm"></source>
+
+                  <source src={anilistmp4} type="video/mp4"></source>
+                </video>
+                <Paragraph>
+                  AniList is the one-stop-shop for the latest news and details
+                  for Anime. Here, you can search or browse for Anime, see their
+                  information and more. We also have a cool social and forum
+                  section where you can share anything Anime with friends around
+                  the world.
+                </Paragraph>
+                <br />
+                <br />
+                <br />
+                <Button path="https://anilist.co" type="work">
+                  Visit Site
+                </Button>
+              </Col>
+            </Row>
+          </Grid>
+        </Section>
+        <Section
+          className="border"
+          backColor="#1a73e8"
+          color="white"
+          pad="80px 0"
+        >
+          <Grid>
+            <Row center="xs">
+              <Col lg={12} xs={11}>
+                <Title size="lg">AniChart</Title>
+                <Image
+                  sizeX="80%"
+                  mar="10px auto 40px auto"
+                  display="block"
+                  src={animeChart}
+                />
+                <Paragraph>
+                  If you've ever wanted to find out what Anime is coming out
+                  year-round then AniChart is the place to be. With AniChart
+                  anyone can check out upcoming TV shows and movies. One cool
+                  the feature is the ability to sort through Anime by season so
+                  you can see what's hot all year round!
+                </Paragraph>
+                <br />
+                <br />
+                <br />
+                <Button path="https://anichart.net" type="work">
+                  Visit Site
+                </Button>
               </Col>
             </Row>
           </Grid>

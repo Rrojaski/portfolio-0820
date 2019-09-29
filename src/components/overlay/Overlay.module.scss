@@ -11,7 +11,7 @@
   border: 1px solid $border-color;
   background-color: $other-white;
   top: -100px;
-  padding: 40px 30px;
+  padding: 40px 60px;
 }
 .black {
   border-radius: 15px;
@@ -36,15 +36,15 @@
     width: 110%;
   }
   .first {
+    z-index: 2;
     border-right: none;
-    left: -9%;
+   // left: -2%;
     border-radius: 15px 0 0 0;
   }
   
   .second {
-    z-index: 2;
-    left: -5%;
-    width: 110%;
+    //left: -5%;
+    width: 100%;
     border-radius: 0;
   }
   
