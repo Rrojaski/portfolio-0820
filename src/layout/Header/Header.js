@@ -10,6 +10,9 @@ import Title from "../../components/Title/Title";
 import Menu from "../../components/Menu/Menu";
 import Paragraph from "../../components/Paragraph/Paragraph";
 
+// CV
+import agent_file from '../../Rojas_Roman_CV.pdf'
+
 //images
 import avatar from "../../images/avatar.svg";
 import close from "../../images/close.svg";
@@ -65,14 +68,15 @@ class Header extends Component {
                                           </Link>
                                         </Col>
                                         <Col xs={6}>
-                                          <a href="#" download="Rojas_Roman_CV">
-                                            <Button
-                                              className="display"
-                                              type="red"
-                                            >
-                                              My CV
+                                          <Button
+                                            path={agent_file}
+                                            download='Rojas_Roman_CV' target='_self'
+                                            className="display"
+                                            type="red"
+                                          >
+                                            My CV
                                             </Button>
-                                          </a>
+
                                         </Col>
                                       </Row>
                                     </Col>
@@ -93,7 +97,9 @@ class Header extends Component {
                             <Col xs={4}>
                               <Link to="/contact">
                                 <div className={`${styles.mobileClose}`}>
-                                  <Button className="display" type="white">
+                                  <Button
+                                    path={agent_file}
+                                    className="display" type="white">
                                     Say Hello
                                   </Button>
                                 </div>
@@ -101,11 +107,10 @@ class Header extends Component {
                             </Col>
                             <Col lg={3} xs={1}>
                               <div className={`${styles.mobileClose}`}>
-                                <a href="#" download="Rojas_Roman_CV">
-                                  <Button className="display" type="red">
-                                    My CV
+                                <Button path={agent_file} download='Rojas_Roman_CV' target='_self' className="display" type="red">
+                                  My CV
                                   </Button>
-                                </a>
+
                               </div>
                             </Col>
                           </Row>
@@ -151,11 +156,12 @@ class Header extends Component {
                                       </Link>
                                     </Col>
                                     <Col xs={6}>
-                                      <a href="#" download="Rojas_Roman_CV">
-                                        <Button className="display" type="red">
-                                          My CV
+                                      <Button
+                                        path={agent_file}
+                                        download='Rojas_Roman_CV' target='_self' className="display" type="red">
+                                        My CV
                                         </Button>
-                                      </a>
+
                                     </Col>
                                   </Row>
                                 </div>
@@ -171,11 +177,11 @@ class Header extends Component {
                             </Col>
                             <Col lg={3} xs={1}>
                               <div className={`${styles.mobileClose}`}>
-                                <a href="#" download="Rojas_Roman_CV">
-                                  <Button className="display" type="red">
-                                    My CV
+
+                                <Button path={agent_file} download='Rojas_Roman_CV' target='_self' className="display" type="red">
+                                  My CV
                                   </Button>
-                                </a>
+
                               </div>
                             </Col>
                           </Row>
