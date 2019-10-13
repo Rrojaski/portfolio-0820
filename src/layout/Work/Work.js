@@ -83,7 +83,7 @@ class Work extends Component {
         </Section>
         <Section
           className="border"
-          backColor="#1a73e8"
+          backColor="rgb(213, 3, 28)"
           color="white"
           pad="80px 0"
         >
@@ -167,7 +167,7 @@ class Work extends Component {
         */}
         <Section
           className="border"
-          backColor="#ea4335"
+          backColor="rgb(49, 53, 91)"
           color="white"
           pad="80px 0"
         >
@@ -204,7 +204,7 @@ class Work extends Component {
         </Section>
         <Section
           className="border"
-          backColor="#1a73e8"
+          backColor="rgb(213, 3, 28)"
           color="white"
           pad="80px 0"
         >
