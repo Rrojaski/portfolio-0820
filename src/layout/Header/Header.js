@@ -6,15 +6,13 @@ import { Route, Link } from "react-router-dom";
 //components
 import Logo from "../../components/Logo/Logo";
 import Button from "../../components/Button/Button";
-import Title from "../../components/Title/Title";
 import Menu from "../../components/Menu/Menu";
 import Paragraph from "../../components/Paragraph/Paragraph";
 
 // CV
 import agent_file from '../../Rojas_Roman_CV.pdf'
 
-//images
-import avatar from "../../images/avatar.svg";
+// images
 import close from "../../images/close.svg";
 
 class Header extends Component {
@@ -28,15 +26,13 @@ class Header extends Component {
                 <Row between="xs" middle="xs">
                   <Col lg={6} xs={11}>
                     <Row middle="xs">
-                      <Link to="/">
-                        <Row middle="xs">
+                      <Row middle="xs">
+                        <Link to="/">
                           <Logo />
-                          <div className={`${styles.removeBorder}`} />
-                        </Row>
-                      </Link>
+                        </Link>
+                      </Row>
                     </Row>
                   </Col>
-
                   <Col lg={6} xs={1}>
                     <Route
                       path="/"
@@ -58,14 +54,13 @@ class Header extends Component {
                                           </Link>
                                         </Col>
                                         <Col xs={6}>
-                                          <Link to="/contact">
-                                            <Button
-                                              className="display"
-                                              type="white"
-                                            >
-                                              Say Hello
+                                          <Button
+                                            className="display"
+                                            type="white"
+                                            link="/contact"
+                                          >
+                                            Say Hello
                                             </Button>
-                                          </Link>
                                         </Col>
                                         <Col xs={6}>
                                           <Button
@@ -76,7 +71,6 @@ class Header extends Component {
                                           >
                                             My CV
                                             </Button>
-
                                         </Col>
                                       </Row>
                                     </Col>
@@ -84,7 +78,6 @@ class Header extends Component {
                                 </div>
                               </Menu>
                             </div>
-
                             <Col xs={1}>
                               <Link to="/work">
                                 <div className={`${styles.mobileClose}`}>
@@ -95,29 +88,28 @@ class Header extends Component {
                               </Link>
                             </Col>
                             <Col xs={4}>
-                              <Link to="/contact">
-                                <div className={`${styles.mobileClose}`}>
-                                  <Button
-                                    path={agent_file}
-                                    className="display" type="white">
-                                    Say Hello
+
+                              <div className={`${styles.mobileClose}`}>
+                                <Button
+                                  link='/contact'
+                                  path={agent_file}
+                                  className="display" type="white">
+                                  Say Hello
                                   </Button>
-                                </div>
-                              </Link>
+                              </div>
+
                             </Col>
                             <Col lg={3} xs={1}>
                               <div className={`${styles.mobileClose}`}>
                                 <Button path={agent_file} download='Rojas_Roman_CV' target='_self' className="display" type="red">
                                   My CV
                                   </Button>
-
                               </div>
                             </Col>
                           </Row>
                         );
                       }}
                     />
-
                     <Route
                       path="/contact"
                       render={() => {
@@ -132,6 +124,7 @@ class Header extends Component {
                                     width: "25px"
                                   }}
                                   src={close}
+                                  alt="Close button"
                                 />
                               </Link>
                             </Col>
@@ -139,7 +132,6 @@ class Header extends Component {
                         );
                       }}
                     />
-
                     <Route
                       path="/work"
                       exact
@@ -151,9 +143,7 @@ class Header extends Component {
                                 <div className={`${styles.mobileOpen}`}>
                                   <Row center="xs">
                                     <Col xs={6}>
-                                      <Link to="/contact">
-                                        <Button type="white">Say Hello</Button>
-                                      </Link>
+                                      <Button link='/contact' type="white">Say Hello</Button>
                                     </Col>
                                     <Col xs={6}>
                                       <Button
@@ -161,27 +151,23 @@ class Header extends Component {
                                         download='Rojas_Roman_CV' target='_self' className="display" type="red">
                                         My CV
                                         </Button>
-
                                     </Col>
                                   </Row>
                                 </div>
                               </Menu>
                             </div>
-
                             <Col md={4} xs={1}>
-                              <Link to="/contact">
-                                <div className={`${styles.mobileClose}`}>
-                                  <Button type="white">Say Hello</Button>
-                                </div>
-                              </Link>
+
+                              <div className={`${styles.mobileClose}`}>
+                                <Button link='/contact' type="white">Say Hello</Button>
+                              </div>
+
                             </Col>
                             <Col lg={3} xs={1}>
                               <div className={`${styles.mobileClose}`}>
-
                                 <Button path={agent_file} download='Rojas_Roman_CV' target='_self' className="display" type="red">
                                   My CV
                                   </Button>
-
                               </div>
                             </Col>
                           </Row>

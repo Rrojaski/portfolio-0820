@@ -5,7 +5,7 @@ import VerticalSplitIcon from "@material-ui/icons/VerticalSplit";
 
 import styles from "./Home.module.scss";
 
-//components
+// components
 import Pane from "../../components/Pane/Pane";
 import Section from "../../components/Section/Section";
 import Avatar from "../../components/Avatar/Avatar";
@@ -20,7 +20,6 @@ import claudio from "../../images/claudio.jfif";
 
 import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import { display } from "@material-ui/system";
 
 // Font Icon
 const svgIcon = {
@@ -37,7 +36,7 @@ class Home extends Component {
     return (
       <Fragment>
         <div className={`${styles.home}`}>
-          <Section pad="210px 0 380px 0" className={`${styles.city}`}>
+          <Section backColor='#EBEBEB' pad="210px 0 380px 0" className={`${styles.city}`}>
             <Grid>
               <Row center="xs">
                 <Col md={12} xs={11}>
@@ -63,7 +62,6 @@ class Home extends Component {
               </Row>
             </Grid>
           </Section>
-
           <Section
             mar="-1px 0 0 0"
             pad="100px 0 220px 0"
@@ -76,7 +74,6 @@ class Home extends Component {
                   <Row center="xs">
                     <Col lg={8} xs={12}>
                       <Title size="md">Hi, I’m Roman. Nice to meet you.</Title>
-
                       <Paragraph>
                         I'm an IT Specialist based in Jacksonville, FL. I have a
                         passion for web development and enjoy turning complex
@@ -90,8 +87,7 @@ class Home extends Component {
               </Row>
             </Grid>
           </Section>
-
-          <Section>
+          <Section backColor='#EBEBEB'>
             <Grid>
               <Row center="xs">
                 <Col lg={12} md={10} xs={11}>
@@ -100,24 +96,19 @@ class Home extends Component {
                       <Overlay section="white" position="first">
                         <VerticalSplitIcon style={svgIcon} />
                         <Title size="sm">Front-end Developer</Title>
-
                         <Paragraph size="md" extra="mar">
                           I like to code things from scratch, and enjoy bringing
                           ideas to life in the browser.
                         </Paragraph>
-
                         <Paragraph size="md" color="colored">
                           Languages I speak:
                         </Paragraph>
-
                         <Paragraph size="md" extra="mar">
                           HTML, JS, SCSS, CSS, Sass
                         </Paragraph>
-
                         <Paragraph size="md" color="colored">
                           Dev Tools:
                         </Paragraph>
-
                         <Paragraph size="md">
                           REACT
                           <br />
@@ -137,73 +128,23 @@ class Home extends Component {
                         </Paragraph>
                       </Overlay>
                     </Col>
-                    {/*
-                    @info   Removed to promote author as software engineer exclusively
-                    <Col lg={4} xs={12}>
-                      <Overlay section="white" position="second">
-                        <Title size="sm">IT Support</Title>
-
-                        <Paragraph size="md" extra="mar">
-                          I create effective solutions with a drive to deliver
-                          work that exceeds expectations.
-                        </Paragraph>
-
-                        <Paragraph size="md" color="colored">
-                          Technologies I support:
-                        </Paragraph>
-
-                        <Paragraph size="md" extra="mar">
-                          MacOS, Windows, Linux, Mobile
-                        </Paragraph>
-
-                        <Paragraph size="md" color="colored">
-                          IT Training:
-                        </Paragraph>
-
-                        <Paragraph size="md">
-                          CompTIA a+
-                          <br />
-                          CompTIA Network+
-                          <br />
-                          Office 365
-                          <br />
-                          Migrations
-                          <br />
-                          Active Directory
-                          <br />
-                          Remote Support
-                          <br />
-                          Ticket Systems
-                          <br />
-                          Service Desk
-                        </Paragraph>
-                      </Overlay>
-                    </Col>
-                  */}
-
                     <Col lg={6} xs={12}>
                       <Overlay section="white" position="third">
                         <StorageIcon style={svgIcon} />
-
                         <Title size="sm">Full-Stack Developer</Title>
-
                         <Paragraph size="md" extra="mar">
                           I have the elemental skills needed to launch a full
                           scale interactive web appliccation.
                         </Paragraph>
-
                         <Paragraph size="md" color="colored">
                           Languages I speak:
                         </Paragraph>
-
                         <Paragraph size="md" extra="mar">
                           MERN Stack, JavaScript, Firebase
                         </Paragraph>
-
                         <Paragraph size="md" color="colored">
                           Dev Tools:
                         </Paragraph>
-
                         <Paragraph size="md">
                           HTTP, HTTPS, APIs
                           <br />
@@ -228,21 +169,18 @@ class Home extends Component {
               </Row>
             </Grid>
           </Section>
-
-          <Section borderBottom="1px solid #E6ECF8" pad="50px 0 100px 0">
+          <Section backColor='#EBEBEB' borderBottom="1px solid #E6ECF8" pad="50px 0 100px 0">
             <Grid>
               <Row center="xs">
                 <Col lg={12} md={10} xs={11}>
                   <Row>
                     <Col xs={12}>
                       <Title size="md">My Recent Work</Title>
-
                       <Paragraph>
                         Here are a few recent design projects. Want to see more?
-                        <a href="mailto:rrojaski@gmail.com"> Email me</a>.
+                        <a href="mailto:rrojaski@gmail.com" rel="noopener noreferrer" > Email me</a>.
                       </Paragraph>
                     </Col>
-
                     <Col lg={4} xs={12}>
                       <Pane
                         target="_blank"
@@ -252,7 +190,6 @@ class Home extends Component {
                         desc="An e-comerse anime website shipping to over 180 Countries"
                       />
                     </Col>
-
                     <Col lg={4} xs={12}>
                       <Pane
                         target="_blank"
@@ -262,7 +199,6 @@ class Home extends Component {
                         desc="This visually appealing website showcases advanced css designs"
                       />
                     </Col>
-
                     <Col lg={4} xs={12}>
                       <Pane
                         target="_self"
@@ -277,7 +213,7 @@ class Home extends Component {
               </Row>
             </Grid>
           </Section>
-          <Section pad="50px 0 100px 0">
+          <Section backColor='#EBEBEB' pad="50px 0 100px 0">
             <Grid>
               <Row center="xs">
                 <Col md={12} xs={12}>
@@ -301,11 +237,13 @@ class Home extends Component {
                         >
                           <Slider>
                             <Slide className={`${styles.slide}`} index={0}>
-                              <Image
-                                sizeX="100px"
-                                radius="50%"
-                                src={francisco}
-                              />
+                              <a target="_blank" href="https://github.com/daiky00" rel="noopener noreferrer" >
+                                <Image
+                                  sizeX="100px"
+                                  radius="50%"
+                                  src={francisco}
+                                />
+                              </a>
                               <br />
                               <br />
                               <br />
@@ -314,14 +252,15 @@ class Home extends Component {
                                 complete work for me and he's been able to
                                 provide quality work on time.”
                               </Paragraph>
-
                               <Title size="name">Francisco Pena</Title>
                               <Paragraph size="sm">
                                 Senior Frontend Developer, Nami ML
                               </Paragraph>
                             </Slide>
                             <Slide index={1}>
-                              <Image sizeX="100px" radius="50%" src={claudio} />
+                              <a target="_blank" href="https://www.linkedin.com/in/kiallio/" rel="noopener noreferrer" >
+                                <Image sizeX="100px" radius="50%" src={claudio} />
+                              </a>
                               <br />
                               <br />
                               <br />
@@ -331,14 +270,12 @@ class Home extends Component {
                                 definitely the kind of Web Developer you can
                                 trust with a project from start to finish.”
                               </Paragraph>
-
                               <Title size="name">Claudio Rojas</Title>
                               <Paragraph size="sm">
                                 Web Developer, LaGuardia Community College
                               </Paragraph>
                             </Slide>
                           </Slider>
-
                           <Dot className={`${styles.dot}`} slide={0} />
                           <Dot className={`${styles.dot}`} slide={1} />
                         </CarouselProvider>

@@ -5,7 +5,7 @@
   position: absolute;
   width: 100%;
   padding: 30px 5px;
-  background-color: inherit;
+  background-color: #EBEBEB;
 
   a {
     text-decoration: none;
@@ -26,17 +26,6 @@
 
     z-index: 100;
   }
-}
-
-//useless code; updated img files to divs so wierd border is gone
-.removeBorder {
-  position: relative;
-  left: -70px;
-  top: -10px;
-  width: 70px;
-  height: 70px;
-  box-sizing: border-box;
-  // border: 1px solid $light-black;
 }
 
 //turn into transition so the slide animation may sldie up upon unfocus

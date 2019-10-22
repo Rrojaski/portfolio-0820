@@ -131,6 +131,7 @@ class Footer extends Component {
                           Made with love{" "}
                           <a
                             target="_blank"
+                            rel="noopener noreferrer"
                             href="https://www.youtube.com/watch?v=ZZ5LpwO-An4"
                           >
                             <Image sizeX="1rem" src={heart} />

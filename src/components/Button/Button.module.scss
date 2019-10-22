@@ -40,12 +40,12 @@
 }
 
 .work {
-  background-color: $light-black;
+  background-color: $other-white;
   border: 2px solid $light-black;
-  padding: 10px 20px;
-  color: $white;
+  padding: 15px 30px;
+  color: $black;
   &:hover {
-    background-color: $light-black;
+    background-color: $white;
     border: 2px solid $light-black;
   }
 }
