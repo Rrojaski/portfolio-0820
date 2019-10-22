@@ -33,28 +33,6 @@ const svgIcon = {
 };
 
 class Home extends Component {
-  constructor() {
-    super();
-  }
-
-  componentDidMount() {
-    /*
-
-    No longer needed. Used to alert user that pane component projects were under the works
-
-    const contruct = e => {
-      let target = e.target.id;
-      alert(
-        `The ${target} app is currently under development. Thank you for your patients.`
-      );
-    };
-    const nails = document.getElementById("nails");
-    const weather = document.getElementById("weather");
-    nails.addEventListener("click", contruct);
-    weather.addEventListener("click", contruct);
-    */
-  }
-
   render() {
     return (
       <Fragment>
@@ -149,13 +127,13 @@ class Home extends Component {
                           <br />
                           MS Code
                           <br />
-                          Codepen
+                          Material UI
                           <br />
                           Github
                           <br />
-                          WordPress
+                          Jasmine
                           <br />
-                          Terminal
+                          Grunt/Gulp
                         </Paragraph>
                       </Overlay>
                     </Col>
@@ -219,7 +197,7 @@ class Home extends Component {
                         </Paragraph>
 
                         <Paragraph size="md" extra="mar">
-                          MERN Stack, JavaScript
+                          MERN Stack, JavaScript, Firebase
                         </Paragraph>
 
                         <Paragraph size="md" color="colored">

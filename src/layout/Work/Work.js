@@ -11,7 +11,6 @@ import Paragraph from "../../components/Paragraph/Paragraph";
 import Cert from "../../components/Cert/Cert";
 import Image from "../../components/Image/Image";
 import Button from "../../components/Button/Button";
-import Globe from "../../components/Globe/Globe";
 import Pane from "../../components/Pane/Pane";
 
 //media
@@ -26,24 +25,7 @@ class Work extends Component {
   }
 
   componentDidMount() {
-    /*
-
-    No longer needed. Used to alert user that pane component projects were under the works
-
-    const contruct = e => {
-      let target = e.target.id;
-      alert(
-        `The ${target} app is currently under development. Thank you for your patients.`
-      );
-    };
-    const nails = document.getElementById("nails");
-    const weather = document.getElementById("weather");
-    nails.addEventListener("click", contruct);
-    weather.addEventListener("click", contruct);
-
-    */
     //fix animation trigger
-
     let controller = new ScrollMagic.Controller();
 
     var tl = new TimelineMax();
