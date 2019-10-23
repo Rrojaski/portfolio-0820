@@ -11,19 +11,7 @@
 <li>HTML</li>
 <li>SCSS</li>
 <li>JavaScript</li>
-<li>GSap</li>
 <li>React-Flexbox</li>
 <li>Styled Components</li>
-<li>ScollMagic</li>
+<li>and more</li>
 </ul>
-
-<h2>To do</h2>
-<ul>
-<li>Update work section graphics</li>
-<li>Fix DNS settings</li>
-<li>Add CV</li>
-<li>Fix Scroll Magic</li>
-</ul>
-
-<h2>Troubleshooting</h2>
-<p>If you're having issues accessing the live site please click this link: <a target="_blank" href='https://www.romanrojas.me'>https://www.romanrojas.me</a></p>
