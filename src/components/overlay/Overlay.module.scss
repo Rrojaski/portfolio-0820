@@ -33,25 +33,20 @@
 
 @media screen and (min-width: 992px) {
   .overlay {
-    width: 110%;
+    width: 100%;
   }
   .first {
+    right: -8px;
     z-index: 2;
     border-right: none;
    // left: -2%;
-    border-radius: 15px 0 0 0;
-  }
-  
-  .second {
-    //left: -5%;
-    width: 100%;
-    border-radius: 0;
+    border-radius: 15px 0 0 15px;
   }
   
   .third {
+    left: -8px;
     border-left: none;
-    left: -1%;
-    border-radius: 0 15px 0 0;
+    border-radius: 0 15px 15px 0;
   }
 }
 

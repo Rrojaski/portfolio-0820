@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styles from "./Footer.module.scss";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 //components
 import Button from "../../components/Button/Button";
@@ -40,9 +40,7 @@ class Footer extends Component {
                             </Paragraph>
                           </Col>
                           <Col lg={4} xs={12}>
-                            <Link to="/contact">
-                              <Button type="black">Let's do this</Button>
-                            </Link>
+                            <Button link='/contact' type="black">Let's do this</Button>
                           </Col>
                         </Row>
                       </Overlay>
