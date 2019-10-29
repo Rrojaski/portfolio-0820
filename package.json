@@ -1,7 +1,7 @@
 {
   "name": "portfolio-0820",
   "version": "1.0.0",
-  "description": "https://mattfarley.ca/      https://dribbble.com/shots/6317545-NY-City-guide-landing-page-motion-design?utm_source=Clipboard_Shot&utm_campaign=ui_migulko&utm_content=NY%20City%20guide%20landing%20page%20motion%20design&utm_medium=Social_Share",
+  "description": "This is my personal portfolio that showcases some of my personal projects as well as my work history.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

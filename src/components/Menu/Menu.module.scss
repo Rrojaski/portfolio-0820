@@ -22,7 +22,7 @@
     bottom: 25%;
   }
   > div {
-    transition: transform 0.5s, top 0.5s, width 0.5s;
+    transition: transform 0.2s, top 0.2s, width 0.2s linear;
     transfrom: tranlate(-50%, -50%);
     left: 0;
     right: 0;
@@ -53,6 +53,8 @@
     }
   }
 }
+
+
 
 @media screen and (min-width: 1024px) {
   .menu {

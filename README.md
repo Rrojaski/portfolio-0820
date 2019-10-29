@@ -1,29 +1,38 @@
-<h1>Portfolio 0820</h1>
+# Portfolio 0820
 
-<h2>Description</h2>
+This is my personal portfolio that showcases some of my personal projects as well as my work history. I hope that you enjoy seeing it as much as I did making it.
 
-<p><em>Hi!</em> This is my personal portfolio that showcases some of my personal projects as well as my work history.</p>
-<p>I hope that you enjoy seeing it as much as I did making it.</p>
+## Getting Started
 
-<h2>Tools Used</h2>
-<ul>
-<li>React</li>
-<li>HTML</li>
-<li>SCSS</li>
-<li>JavaScript</li>
-<li>GSap</li>
-<li>React-Flexbox</li>
-<li>Styled Components</li>
-<li>ScollMagic</li>
-</ul>
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-<h2>To do</h2>
-<ul>
-<li>Update work section graphics</li>
-<li>Fix DNS settings</li>
-<li>Add CV</li>
-<li>Fix Scroll Magic</li>
-</ul>
+### Prerequisites
 
-<h2>Troubleshooting</h2>
-<p>If you're having issues accessing the live site please click this link: <a target="_blank" href='https://www.romanrojas.me'>https://www.romanrojas.me</a></p>
+* Nodejs: https://nodejs.org/en/
+
+### Installing
+
+1- Install Node.js
+
+2- `git clone https://github.com/Rrojaski/portfolio-0820`
+
+3- `cd ai-loop-frontend`
+
+4- `yarn install`
+
+5- `yarn start`
+
+6- go to `http://localhost:3000/`
+
+### Production
+
+1- `yarn build`
+
+
+## Author
+
+* **Roman Rojas** - [RRojaski](https://github.com/rrojaski)
+
+## To Do
+
+* Update Overlay

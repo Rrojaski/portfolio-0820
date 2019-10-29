@@ -5,7 +5,7 @@
   position: absolute;
   width: 100%;
   padding: 30px 5px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 
   a {
     text-decoration: none;
@@ -32,7 +32,7 @@
 @media screen and (max-width: 1023px) {
   .open:focus-within .mobileOpen {
     display: block !important;
-    animation: slideDown 0.5s !important;
+    animation: slideDown 0.2s !important;
   }
 
   .mobileOpen {
@@ -42,7 +42,7 @@
     display: none;
     box-sizing: border-box;
     border-bottom: 1px solid $border-color;
-    background: $other-white;
+    background: #ebebeb;
     left: 0;
     top: 120px;
     width: 100%;
