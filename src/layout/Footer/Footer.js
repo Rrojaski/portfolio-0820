@@ -81,9 +81,9 @@ class Footer extends Component {
                           textDecoration: "none",
                           display: "inline-block"
                         }}
-                        href="tel:9042715715"
+                        href="tel:4152124911"
                       >
-                        <Paragraph>904 - 271 - 5715</Paragraph>
+                        <Paragraph>415 - 212 - 4911</Paragraph>
                       </a>
                     </Row>
                   </Col>

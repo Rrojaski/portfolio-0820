@@ -36,7 +36,11 @@ class Home extends Component {
     return (
       <Fragment>
         <div className={`${styles.home}`}>
-          <Section backColor='#EBEBEB' pad="210px 0 380px 0" className={`${styles.city}`}>
+          <Section
+            backColor="#EBEBEB"
+            pad="210px 0 380px 0"
+            className={`${styles.city}`}
+          >
             <Grid>
               <Row center="xs">
                 <Col md={12} xs={11}>
@@ -75,11 +79,10 @@ class Home extends Component {
                     <Col lg={8} xs={12}>
                       <Title size="md">Hi, I’m Roman. Nice to meet you.</Title>
                       <Paragraph>
-                        I'm an IT Specialist based in Jacksonville, FL. I have a
-                        passion for web development and enjoy turning complex
-                        problems into simple solutions. When I'm not coding or
-                        pushing pixels, you'll find me workingout or playing
-                        around with and learning about new technologies.
+                        I'm an experienced front-end developer. I have worked
+                        with start-ups and large organizations helping them
+                        write efficient code for their websites and applications
+                        using modern HTML, CSS, and JavaScript.
                       </Paragraph>
                     </Col>
                   </Row>
@@ -87,7 +90,7 @@ class Home extends Component {
               </Row>
             </Grid>
           </Section>
-          <Section backColor='#EBEBEB'>
+          <Section backColor="#EBEBEB">
             <Grid>
               <Row center="xs">
                 <Col lg={12} md={10} xs={11}>
@@ -104,7 +107,7 @@ class Home extends Component {
                           Languages I speak:
                         </Paragraph>
                         <Paragraph size="md" extra="mar">
-                          HTML, JS, SCSS, CSS, Sass
+                          HTML, JS, TypeScript, SCSS, CSS, Sass
                         </Paragraph>
                         <Paragraph size="md" color="colored">
                           Dev Tools:
@@ -112,19 +115,19 @@ class Home extends Component {
                         <Paragraph size="md">
                           REACT
                           <br />
-                          NODE.js
+                          Angular
                           <br />
                           Bootstrap
                           <br />
-                          MS Code
+                          NODE.js
                           <br />
-                          Material UI
+                          Firebase
                           <br />
                           Github
                           <br />
                           Jasmine
                           <br />
-                          Grunt/Gulp
+                          Karma
                         </Paragraph>
                       </Overlay>
                     </Col>
@@ -140,7 +143,7 @@ class Home extends Component {
                           Languages I speak:
                         </Paragraph>
                         <Paragraph size="md" extra="mar">
-                          MERN Stack, JavaScript, Firebase
+                          MERN Stack, C#, JavaScript, Firebase
                         </Paragraph>
                         <Paragraph size="md" color="colored">
                           Dev Tools:
@@ -169,7 +172,11 @@ class Home extends Component {
               </Row>
             </Grid>
           </Section>
-          <Section backColor='#EBEBEB' borderBottom="1px solid #E6ECF8" pad="50px 0 100px 0">
+          <Section
+            backColor="#EBEBEB"
+            borderBottom="1px solid #E6ECF8"
+            pad="50px 0 100px 0"
+          >
             <Grid>
               <Row center="xs">
                 <Col lg={12} md={10} xs={11}>
@@ -178,7 +185,14 @@ class Home extends Component {
                       <Title size="md">My Recent Work</Title>
                       <Paragraph>
                         Here are a few recent design projects. Want to see more?
-                        <a href="mailto:rrojaski@gmail.com" rel="noopener noreferrer" > Email me</a>.
+                        <a
+                          href="mailto:rrojaski@gmail.com"
+                          rel="noopener noreferrer"
+                        >
+                          {" "}
+                          Email me
+                        </a>
+                        .
                       </Paragraph>
                     </Col>
                     <Col lg={4} xs={12}>
@@ -213,7 +227,7 @@ class Home extends Component {
               </Row>
             </Grid>
           </Section>
-          <Section backColor='#EBEBEB' pad="50px 0 100px 0">
+          <Section backColor="#EBEBEB" pad="50px 0 100px 0">
             <Grid>
               <Row center="xs">
                 <Col md={12} xs={12}>
@@ -237,7 +251,11 @@ class Home extends Component {
                         >
                           <Slider>
                             <Slide className={`${styles.slide}`} index={0}>
-                              <a target="_blank" href="https://github.com/daiky00" rel="noopener noreferrer" >
+                              <a
+                                target="_blank"
+                                href="https://github.com/daiky00"
+                                rel="noopener noreferrer"
+                              >
                                 <Image
                                   sizeX="100px"
                                   radius="50%"
@@ -258,8 +276,16 @@ class Home extends Component {
                               </Paragraph>
                             </Slide>
                             <Slide index={1}>
-                              <a target="_blank" href="https://www.linkedin.com/in/kiallio/" rel="noopener noreferrer" >
-                                <Image sizeX="100px" radius="50%" src={claudio} />
+                              <a
+                                target="_blank"
+                                href="https://www.linkedin.com/in/kiallio/"
+                                rel="noopener noreferrer"
+                              >
+                                <Image
+                                  sizeX="100px"
+                                  radius="50%"
+                                  src={claudio}
+                                />
                               </a>
                               <br />
                               <br />
