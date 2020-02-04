@@ -82,7 +82,7 @@ class Home extends Component {
                         I'm an experienced front-end developer based in Florida. I have worked
                         with start-ups and large organizations helping them
                         write efficient code for their websites and applications
-                        using modern HTML, CSS, and JavaScript.
+                        using modern HTML, CSS, and JavaScript. 
                       </Paragraph>
                     </Col>
                   </Row>
