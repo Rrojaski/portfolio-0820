@@ -81,9 +81,9 @@ class Footer extends Component {
                           textDecoration: "none",
                           display: "inline-block"
                         }}
-                        href="tel:4152124911"
+                        href="tel:9042715715"
                       >
-                        <Paragraph>415 - 212 - 4911</Paragraph>
+                        <Paragraph>904 - 271 - 5715</Paragraph>
                       </a>
                     </Row>
                   </Col>
@@ -113,7 +113,7 @@ class Footer extends Component {
                         <Icon
                           name="linkedin"
                           type="shake"
-                          href="https://www.linkedin.com/in/roman-rojas-14a23a86"
+                          href="https://www.linkedin.com/in/roman-rojas"
                         />
                         <Icon
                           name="dribble"

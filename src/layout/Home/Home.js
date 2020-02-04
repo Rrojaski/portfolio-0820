@@ -79,7 +79,7 @@ class Home extends Component {
                     <Col lg={8} xs={12}>
                       <Title size="md">Hi, I’m Roman. Nice to meet you.</Title>
                       <Paragraph>
-                        I'm an experienced front-end developer. I have worked
+                        I'm an experienced front-end developer based in Florida. I have worked
                         with start-ups and large organizations helping them
                         write efficient code for their websites and applications
                         using modern HTML, CSS, and JavaScript.
