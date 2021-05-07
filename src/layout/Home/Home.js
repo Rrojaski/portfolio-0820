@@ -46,7 +46,7 @@ class Home extends Component {
                 <Col md={12} xs={11}>
                   <Row center="xs">
                     <Col xs={12}>
-                      <Title size="lg">Front-end Developer </Title>
+                      <Title size="lg">Software Engineer</Title>
                       <br />
 
                       <Title size="sm">
@@ -79,10 +79,10 @@ class Home extends Component {
                     <Col lg={8} xs={12}>
                       <Title size="md">Hi, I’m Roman. Nice to meet you.</Title>
                       <Paragraph>
-                        I'm an experienced front-end developer based in Florida. I have worked
+                        I'm an experienced Software Engineer based in the United States. I have worked
                         with start-ups and large organizations helping them
-                        write efficient code for their websites and applications
-                        using modern HTML, CSS, and JavaScript. 
+                        write efficient code for their websites and mobile apps
+                        using modern frameworks and tools.
                       </Paragraph>
                     </Col>
                   </Row>
@@ -107,7 +107,7 @@ class Home extends Component {
                           Languages I speak:
                         </Paragraph>
                         <Paragraph size="md" extra="mar">
-                          HTML, JS, TypeScript, SCSS, CSS, Sass
+                          HTML, JavaScript, TypeScript, Dart, CSS, Sass
                         </Paragraph>
                         <Paragraph size="md" color="colored">
                           Dev Tools:
@@ -116,6 +116,8 @@ class Home extends Component {
                           REACT
                           <br />
                           Angular
+                          <br />
+                          Flutter
                           <br />
                           Bootstrap
                           <br />
@@ -143,12 +145,16 @@ class Home extends Component {
                           Languages I speak:
                         </Paragraph>
                         <Paragraph size="md" extra="mar">
-                          MERN Stack, C#, JavaScript, Firebase
+                          MERN Stack, C#, JavaScript
                         </Paragraph>
                         <Paragraph size="md" color="colored">
                           Dev Tools:
                         </Paragraph>
                         <Paragraph size="md">
+                          .NET
+                          <br />
+                          .NET Core
+                          <br />
                           HTTP, HTTPS, APIs
                           <br />
                           MongoDB
@@ -162,8 +168,6 @@ class Home extends Component {
                           Github
                           <br />
                           NPM
-                          <br />
-                          Heroku
                         </Paragraph>
                       </Overlay>
                     </Col>
@@ -199,7 +203,7 @@ class Home extends Component {
                       <Pane
                         target="_blank"
                         color="dark"
-                        href="https://www.anime-shop-online.com"
+                        href="https://www.otakuchan.com"
                         type="anime"
                         desc="An e-comerse anime website shipping to over 180 Countries"
                       />
@@ -215,11 +219,11 @@ class Home extends Component {
                     </Col>
                     <Col lg={4} xs={12}>
                       <Pane
-                        target="_self"
-                        href="https://welcome-0906.netlify.com"
+                        target="_blank"
+                        href="https://kidafh.com/.com"
                         color="dark"
-                        type="welcome"
-                        desc="An ineractive welcome screen"
+                        type="kidafh"
+                        desc=""
                       />
                     </Col>
                   </Row>

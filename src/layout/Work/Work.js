@@ -43,8 +43,8 @@ class Work extends Component {
           <Grid>
             <Row center="xs">
               <Col lg={12} xs={11}>
-                <Title size="lg">Anime Shop Online</Title>
-                <a target='_blank' href="https://www.anime-shop-online.com/" rel="noopener noreferrer" >
+                <Title size="lg">otakuchan</Title>
+                <a target='_blank' href="https://www.otakuchan.com/" rel="noopener noreferrer" >
                   <Image
                     sizeX="80%"
                     mar="10px auto 40px auto"
