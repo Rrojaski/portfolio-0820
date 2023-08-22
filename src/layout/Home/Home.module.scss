@@ -18,10 +18,13 @@
 
   border: none;
   border-radius: 50%;
-  background-color: $blue;
-  border: 2px solid $border-color;
+  border: 2px solid $blue;
   width: 5px !important;
   height: 15px !important;
+}
+
+.dot:disabled {
+  background-color: $blue;
 }
 
 //useless code; updated img files to divs so wierd border is gone
