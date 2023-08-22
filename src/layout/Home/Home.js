@@ -203,7 +203,7 @@ class Home extends Component {
                       <Pane
                         target="_blank"
                         color="dark"
-                        href="https://www.otakuchan.com"
+                        href="https://www.omgkawaii.com"
                         type="anime"
                         desc="An e-comerse anime website shipping to over 180 Countries"
                       />
