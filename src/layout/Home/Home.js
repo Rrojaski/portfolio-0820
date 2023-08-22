@@ -28,7 +28,7 @@ const svgIcon = {
   margin: "0 auto",
   marginBottom: "1rem",
   display: "block",
-  position: "relative"
+  position: "relative",
 };
 
 class Home extends Component {
@@ -79,10 +79,11 @@ class Home extends Component {
                     <Col lg={8} xs={12}>
                       <Title size="md">Hi, I’m Roman. Nice to meet you.</Title>
                       <Paragraph>
-                        I'm an experienced Software Engineer based in the United States. I have worked
-                        with start-ups and large organizations helping them
-                        write efficient code for their websites and mobile apps
-                        using modern frameworks and tools.
+                        I'm an experienced Software Engineer based in the United
+                        States. I have worked with start-ups and large
+                        organizations helping them write efficient code for
+                        their websites and mobile apps using modern frameworks
+                        and tools.
                       </Paragraph>
                     </Col>
                   </Row>
@@ -107,7 +108,7 @@ class Home extends Component {
                           Languages I speak:
                         </Paragraph>
                         <Paragraph size="md" extra="mar">
-                          HTML, JavaScript, TypeScript, Dart, CSS, Sass
+                          JavaScript, TypeScript, Dart, CSS, Sass
                         </Paragraph>
                         <Paragraph size="md" color="colored">
                           Dev Tools:
@@ -145,7 +146,7 @@ class Home extends Component {
                           Languages I speak:
                         </Paragraph>
                         <Paragraph size="md" extra="mar">
-                          MERN Stack, C#, JavaScript
+                          C#, JavaScript
                         </Paragraph>
                         <Paragraph size="md" color="colored">
                           Dev Tools:
@@ -153,13 +154,13 @@ class Home extends Component {
                         <Paragraph size="md">
                           .NET
                           <br />
+                          Azure
+                          <br />
                           .NET Core
                           <br />
+                          SQL
+                          <br />
                           HTTP, HTTPS, APIs
-                          <br />
-                          MongoDB
-                          <br />
-                          Express
                           <br />
                           React
                           <br />
