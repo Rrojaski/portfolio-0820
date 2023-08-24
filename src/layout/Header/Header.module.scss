@@ -30,7 +30,7 @@
 
 //turn into transition so the slide animation may sldie up upon unfocus
 @media screen and (max-width: 1023px) {
-  .open:focus-within .mobileOpen {
+  .open .mobileOpen {
     display: block !important;
     animation: slideDown 0.2s !important;
   }

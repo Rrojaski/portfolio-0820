@@ -10,12 +10,28 @@ import Menu from "../../components/Menu/Menu";
 import Paragraph from "../../components/Paragraph/Paragraph";
 
 // CV
-import agent_file from '../../Rojas_Roman_CV.pdf'
+import agent_file from "../../Rojas_Roman_CV.pdf";
 
 // images
 import close from "../../images/close.svg";
 
 class Header extends Component {
+  handleClick() {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+  handleBlur() {
+    setTimeout(() => {
+      this.setState({ isOpen: false });
+    }, 100);
+  }
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: props.isOpen,
+    };
+    this.handleClick = this.handleClick.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
+  }
   render() {
     return (
       <Fragment>
@@ -40,8 +56,16 @@ class Header extends Component {
                       render={() => {
                         return (
                           <Row middle="xs" end="xs">
-                            <div className={`${styles.open}`}>
-                              <Menu>
+                            <div
+                              className={`${
+                                this.state.isOpen ? styles.open : ""
+                              }`}
+                            >
+                              <Menu
+                                isOpen={this.state.isOpen}
+                                handleClick={this.handleClick}
+                                handleBlur={this.handleBlur}
+                              >
                                 <div className={`${styles.mobileOpen}`}>
                                   <Row center="xs">
                                     <Col xs={10}>
@@ -60,17 +84,18 @@ class Header extends Component {
                                             link="/contact"
                                           >
                                             Say Hello
-                                            </Button>
+                                          </Button>
                                         </Col>
                                         <Col xs={6}>
                                           <Button
                                             path={agent_file}
-                                            download='Rojas_Roman_CV' target='_self'
+                                            download="Rojas_Roman_CV"
+                                            target="_self"
                                             className="display"
                                             type="red"
                                           >
                                             My CV
-                                            </Button>
+                                          </Button>
                                         </Col>
                                       </Row>
                                     </Col>
@@ -88,22 +113,28 @@ class Header extends Component {
                               </Link>
                             </Col>
                             <Col xs={4}>
-
                               <div className={`${styles.mobileClose}`}>
                                 <Button
-                                  link='/contact'
+                                  link="/contact"
                                   path={agent_file}
-                                  className="display" type="white">
+                                  className="display"
+                                  type="white"
+                                >
                                   Say Hello
-                                  </Button>
+                                </Button>
                               </div>
-
                             </Col>
                             <Col lg={3} xs={1}>
                               <div className={`${styles.mobileClose}`}>
-                                <Button path={agent_file} download='Rojas_Roman_CV' target='_self' className="display" type="red">
+                                <Button
+                                  path={agent_file}
+                                  download="Rojas_Roman_CV"
+                                  target="_self"
+                                  className="display"
+                                  type="red"
+                                >
                                   My CV
-                                  </Button>
+                                </Button>
                               </div>
                             </Col>
                           </Row>
@@ -121,7 +152,7 @@ class Header extends Component {
                                   style={{
                                     position: "relative",
                                     left: "-35px",
-                                    width: "25px"
+                                    width: "25px",
                                   }}
                                   src={close}
                                   alt="Close button"
@@ -138,36 +169,56 @@ class Header extends Component {
                       render={() => {
                         return (
                           <Row middle="xs" end="xs">
-                            <div className={`${styles.open}`}>
-                              <Menu>
+                            <div
+                              className={`${
+                                this.state.isOpen ? styles.open : ""
+                              }`}
+                            >
+                              <Menu
+                                isOpen={this.state.isOpen}
+                                handleClick={this.handleClick}
+                                handleBlur={this.handleBlur}
+                              >
                                 <div className={`${styles.mobileOpen}`}>
                                   <Row center="xs">
                                     <Col xs={6}>
-                                      <Button link='/contact' type="white">Say Hello</Button>
+                                      <Button link="/contact" type="white">
+                                        Say Hello
+                                      </Button>
                                     </Col>
                                     <Col xs={6}>
                                       <Button
                                         path={agent_file}
-                                        download='Rojas_Roman_CV' target='_self' className="display" type="red">
+                                        download="Rojas_Roman_CV"
+                                        target="_self"
+                                        className="display"
+                                        type="red"
+                                      >
                                         My CV
-                                        </Button>
+                                      </Button>
                                     </Col>
                                   </Row>
                                 </div>
                               </Menu>
                             </div>
                             <Col md={4} xs={1}>
-
                               <div className={`${styles.mobileClose}`}>
-                                <Button link='/contact' type="white">Say Hello</Button>
+                                <Button link="/contact" type="white">
+                                  Say Hello
+                                </Button>
                               </div>
-
                             </Col>
                             <Col lg={3} xs={1}>
                               <div className={`${styles.mobileClose}`}>
-                                <Button path={agent_file} download='Rojas_Roman_CV' target='_self' className="display" type="red">
+                                <Button
+                                  path={agent_file}
+                                  download="Rojas_Roman_CV"
+                                  target="_self"
+                                  className="display"
+                                  type="red"
+                                >
                                   My CV
-                                  </Button>
+                                </Button>
                               </div>
                             </Col>
                           </Row>

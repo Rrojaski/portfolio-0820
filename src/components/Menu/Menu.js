@@ -2,10 +2,15 @@ import React, { Fragment } from "react";
 
 import styles from "./Menu.module.scss";
 
-const Menu = props => {
+const Menu = (props) => {
   return (
     <Fragment>
-      <div className={`${styles.menu}`} tabIndex="0">
+      <div
+        className={`${styles.menu} ${props.isOpen ? styles.isOpen : ""}`}
+        tabIndex="0"
+        onClick={props.handleClick}
+        onBlur={props.handleBlur}
+      >
         <div readOnly={true} contentEditable="false" />
         <div readOnly={true} contentEditable="false" />
         <div readOnly={true} contentEditable="false" />

@@ -33,28 +33,26 @@
     height: 2px;
     background-color: $black;
   }
-
-  &:focus {
-    outline: none;
-
-    caret-color: transparent;
-
-    > div:nth-child(2) {
-      width: 0;
-    }
-
-    > div:nth-child(1) {
-      top: 50%;
-      transform: rotate(45deg);
-    }
-    > div:nth-child(3) {
-      top: 50%;
-      transform: rotate(-45deg);
-    }
-  }
 }
 
+.isOpen {
+  outline: none;
 
+  caret-color: transparent;
+
+  > div:nth-child(2) {
+    width: 0;
+  }
+
+  > div:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  > div:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .menu {
