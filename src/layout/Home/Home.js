@@ -203,6 +203,15 @@ class Home extends Component {
                     <Col lg={4} xs={12}>
                       <Pane
                         target="_blank"
+                        href="https://suddath.com"
+                        color="dark"
+                        type="kidafh"
+                        desc=""
+                      />
+                    </Col>
+                    <Col lg={4} xs={12}>
+                      <Pane
+                        target="_blank"
                         color="dark"
                         href="https://www.omgkawaii.com"
                         type="anime"
@@ -216,15 +225,6 @@ class Home extends Component {
                         href="https://stupefied-kepler-3384a4.netlify.com"
                         type="css"
                         desc="This visually appealing website showcases advanced css designs"
-                      />
-                    </Col>
-                    <Col lg={4} xs={12}>
-                      <Pane
-                        target="_blank"
-                        href="https://kidafh.com/.com"
-                        color="dark"
-                        type="kidafh"
-                        desc=""
                       />
                     </Col>
                   </Row>

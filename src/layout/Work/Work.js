@@ -11,6 +11,7 @@ import Button from "../../components/Button/Button";
 import Pane from "../../components/Pane/Pane";
 
 //media
+import suddath from "../../images/suddath.jpg";
 import animeCover from "../../images/animeCover.png";
 import animeChart from "../../images/anichart.PNG";
 import anilistmp4 from "../../images/anilist.mp4";
@@ -20,11 +21,7 @@ class Work extends Component {
   render() {
     return (
       <Fragment>
-        <Section
-          backColor='#EBEBEB'
-          pos="bottom"
-          pad="220px 0"
-        >
+        <Section backColor="#EBEBEB" pos="bottom" pad="220px 0">
           <Grid>
             <Row center="xs">
               <Col>
@@ -36,15 +33,63 @@ class Work extends Component {
         </Section>
         <Section
           className="border"
-          backColor="rgb(213, 3, 28)"
+          backColor="#c7041b"
           color="white"
           pad="80px 0"
         >
           <Grid>
             <Row center="xs">
               <Col lg={12} xs={11}>
-                <Title size="lg">omgkawaii (formerly Anime Shop Online)</Title>
-                <a target='_blank' href="https://www.otakuchan.com/" rel="noopener noreferrer" >
+                <Title size="lg">Suddath</Title>
+                <a
+                  target="_blank"
+                  href="https://www.suddath.com/"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    sizeX="80%"
+                    mar="10px auto 40px auto"
+                    display="block"
+                    src={suddath}
+                  />
+                </a>
+                <Paragraph>
+                  As a proficient software engineer at Suddath, a trusted leader
+                  in moving and logistics for over a century, I've been pivotal
+                  in driving technological advancements. By harnessing Angular,
+                  and .NET Core, I've crafted and upheld web applications that
+                  have amplified operational efficiency. Guiding the migration
+                  of legacy systems to the latest Angular and .NET Core
+                  iterations, I've been instrumental in achieving a more agile
+                  and scalable architectural framework. My expertise also
+                  encompasses fine-tuning data operations within Microsoft SQL
+                  Server, ensuring impeccable data storage and retrieval.
+                </Paragraph>
+                <br />
+                <br />
+                <br />
+                <Button path="https://www.suddath.com/" type="work">
+                  Visit Site
+                </Button>
+              </Col>
+            </Row>
+          </Grid>
+        </Section>
+        <Section
+          className="border"
+          backColor="rgb(49, 53, 91)"
+          color="white"
+          pad="80px 0"
+        >
+          <Grid>
+            <Row center="xs">
+              <Col lg={12} xs={11}>
+                <Title size="lg">Omgkawaii (formerly Anime Shop Online)</Title>
+                <a
+                  target="_blank"
+                  href="https://www.otakuchan.com/"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     sizeX="80%"
                     mar="10px auto 40px auto"
@@ -72,80 +117,6 @@ class Work extends Component {
         </Section>
         <Section
           className="border"
-          backColor="rgb(49, 53, 91)"
-          color="white"
-          pad="80px 0"
-        >
-          <Grid>
-            <Row center="xs">
-              <Col lg={12} xs={11}>
-                <Title size="lg">AniList</Title>
-                <a target='_blank' href="https://anilist.co" rel="noopener noreferrer">
-                  <video
-                    className={styles.work__video}
-                    loop="loop"
-                    autoPlay="autoPlay"
-                    muted="muted"
-                  >
-                    <source src={anilistwebm} type="video/webm"></source>
-                    <source src={anilistmp4} type="video/mp4"></source>
-                  </video>
-                </a>
-                <Paragraph>
-                  AniList is the one-stop-shop for the latest news and details
-                  for Anime. Here, you can search or browse for Anime, see their
-                  information and more. We also have a cool social and forum
-                  section where you can share anything Anime with friends around
-                  the world.
-                </Paragraph>
-                <br />
-                <br />
-                <br />
-                <Button path="https://anilist.co" type="work">
-                  Visit Site
-                </Button>
-              </Col>
-            </Row>
-          </Grid>
-        </Section>
-        <Section
-          className="border"
-          backColor="rgb(213, 3, 28)"
-          color="white"
-          pad="80px 0"
-        >
-          <Grid>
-            <Row center="xs">
-              <Col lg={12} xs={11}>
-                <Title size="lg">AniChart</Title>
-                <a target='_blank' href='https://anichart.net' rel="noopener noreferrer" >
-                  <Image
-                    anchor='https://anichart.net'
-                    sizeX="80%"
-                    mar="10px auto 40px auto"
-                    display="block"
-                    src={animeChart}
-                  />
-                </a>
-                <Paragraph>
-                  If you've ever wanted to find out what Anime is coming out
-                  year-round then AniChart is the place to be. With AniChart
-                  anyone can check out upcoming TV shows and movies. One cool
-                  the feature is the ability to sort through Anime by season so
-                  you can see what's hot all year round!
-                </Paragraph>
-                <br />
-                <br />
-                <br />
-                <Button path="https://anichart.net" type="work">
-                  Visit Site
-                </Button>
-              </Col>
-            </Row>
-          </Grid>
-        </Section>
-        <Section
-          className="border"
           backColor="#293347"
           color="white"
           pad="200px 0"
@@ -162,16 +133,7 @@ class Work extends Component {
                       color="light"
                       type="css"
                       desc="This visually appealing website showcases advanced css designs"
-                      style={{ marginTop: '30px' }}
-                    />
-                  </Col>
-                  <Col lg={4} xs={12}>
-                    <Pane
-                      target="_self"
-                      href="https://welcome-0906.netlify.com"
-                      color="light"
-                      type="welcome"
-                      desc="An ineractive welcome screen"
+                      style={{ marginTop: "30px" }}
                     />
                   </Col>
                 </Row>
