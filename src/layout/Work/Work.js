@@ -12,7 +12,7 @@ import Pane from "../../components/Pane/Pane";
 
 //media
 import suddath from "../../images/suddath.jpg";
-import animeCover from "../../images/animeCover.png";
+import animeCover from "../../images/otakuchan.jpg";
 import animeChart from "../../images/anichart.PNG";
 import anilistmp4 from "../../images/anilist.mp4";
 import anilistwebm from "../../images/anilist.webm";
@@ -84,10 +84,10 @@ class Work extends Component {
           <Grid>
             <Row center="xs">
               <Col lg={12} xs={11}>
-                <Title size="lg">Omgkawaii (formerly Anime Shop Online)</Title>
+                <Title size="lg">Otakuchan (formerly Anime Shop Online)</Title>
                 <a
                   target="_blank"
-                  href="https://www.otakuchan.com/"
+                  href="https://www.facebook.com/otakuchancom"
                   rel="noopener noreferrer"
                 >
                   <Image
@@ -108,8 +108,8 @@ class Work extends Component {
                 <br />
                 <br />
                 <br />
-                <Button path="https://www.omgkawaii.com/" type="work">
-                  Visit Site
+                <Button path="https://www.facebook.com/otakuchancom" type="work">
+                  Contact Us On Facebook
                 </Button>
               </Col>
             </Row>
