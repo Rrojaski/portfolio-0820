@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch } from "react-router-dom";
 
 // Styles
 import "reset.css";
@@ -14,17 +14,23 @@ import Footer from "./layout/Footer/Footer";
 
 function App() {
   return (
-    <Fragment>
-      <div id='style-1' className="App">
+    <div>
+      <div id="style-1" className="App">
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/work" component={Work} />
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/work">
+            <Work />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
         </Switch>
         <Footer />
       </div>
-    </Fragment>
+    </div>
   );
 }
 
