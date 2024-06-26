@@ -129,7 +129,7 @@ class Work extends Component {
                   <Col lg={4} xs={12}>
                     <Pane
                       target="_blank"
-                      href="https://stupefied-kepler-3384a4.netlify.com"
+                      href="https://stupefied-kepler-3384a4.netlify.app"
                       color="light"
                       type="css"
                       desc="This visually appealing website showcases advanced css designs"

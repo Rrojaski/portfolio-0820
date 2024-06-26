@@ -222,7 +222,7 @@ class Home extends Component {
                       <Pane
                         target="_blank"
                         color="dark"
-                        href="https://stupefied-kepler-3384a4.netlify.com"
+                        href="https://stupefied-kepler-3384a4.netlify.app"
                         type="css"
                         desc="This visually appealing website showcases advanced css designs"
                       />
